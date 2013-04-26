@@ -1,10 +1,28 @@
 
 	task :build do
 	  puts `node ./scripts/build.js`
+	  puts `node ./scripts/bump-version.js`
 	end
 	
-	task :deploy do
+	task :deploy do	
+	  unless `git status`.include?('working directory clean')
+	    puts `git status`
+	    puts 'first commit your changes'.red
+	    next
+	  end
+	
+	  puts `node ./scripts/build.js`
+	  puts `node ./scripts/bump-version.js`
+	
+	  puts `git add .`
+	  puts `git commit -am 'bumped version'`
+	
 	  puts `git push origin master`
 	  puts `npm publish ./`
 	end
 	
+	class String
+	  def red
+	    "\e[31m#{self}\e[0m"
+	  end
+	end
