@@ -1,0 +1,10 @@
+
+	task :build do
+	  puts `node ./scripts/build.js`
+	end
+	
+	task :deploy do
+	  puts `git push origin master`
+	  puts `npm publish ./`
+	end
+	

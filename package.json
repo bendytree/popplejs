@@ -1,6 +1,6 @@
 {
   "name": "popple",
-  "version": "0.2.12",
+  "version": "0.2.15",
   "description": "modals for jQuery - a stack based, lightweight, modular, evented, dialog system that uses CSS animations",
   "repository": {
     "type": "git",
@@ -13,8 +13,7 @@
     "popup",
     "css"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "uglify-js": "~2.2.5",
     "stringsmash": "*",
