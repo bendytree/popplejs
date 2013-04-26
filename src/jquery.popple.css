@@ -1,0 +1,212 @@
+
+    /* POPPLE-BOUNCE PUSH */
+    @keyframes popple-bounce-push-animation {
+        0%   {transform: translateY(-300px); opacity:0;}
+        60%  {transform: translateY(20px);}
+        100% {transform: translateY(0); opacity:1;}
+    }
+    @-webkit-keyframes popple-bounce-push-animation {
+        0%   {-webkit-transform: translateY(-300px); opacity:0;}
+        60%  {-webkit-transform: translateY(20px);}
+        100% {-webkit-transform: translateY(0); opacity:1;}
+    }
+    @-moz-keyframes popple-bounce-push-animation {
+        0%   {-moz-transform: translateY(-300px); opacity:0;}
+        60%  {-moz-transform: translateY(20px);}
+        100% {-moz-transform: translateY(0); opacity:1;}
+    }
+    @-o-keyframes popple-bounce-push-animation {
+        0%   {-o-transform: translateY(-300px); opacity:0;}
+        60%  {-o-transform: translateY(20px);}
+        100% {-o-transform: translateY(0); opacity:1;}
+    }
+    .popple-bounce.push {
+        animation-name: popple-bounce-push-animation;
+        -webkit-animation-name: popple-bounce-push-animation;
+        -moz-animation-name: popple-bounce-push-animation;
+        -o-animation-name: popple-bounce-push-animation;
+    }
+
+
+    /* POPPLE-BOUNCE POP */
+    @keyframes popple-bounce-pop-animation {
+        0%   {transform: translateY(0); opacity:1;}
+        40%  {transform: translateY(20px);}
+        100% {transform: translateY(-300px); opacity:0;}
+    }
+    @-webkit-keyframes popple-bounce-pop-animation {
+        0%   {-webkit-transform: translateY(0); opacity:1;}
+        40%  {-webkit-transform: translateY(20px);}
+        100% {-webkit-transform: translateY(-300px); opacity:0;}
+    }
+    @-moz-keyframes popple-bounce-pop-animation {
+        0%   {-moz-transform: translateY(0); opacity:1;}
+        40%  {-moz-transform: translateY(20px);}
+        100% {-moz-transform: translateY(-300px); opacity:0;}
+    }
+    @-o-keyframes popple-bounce-pop-animation {
+        0%   {-o-transform: translateY(0); opacity:1;}
+        40%  {-o-transform: translateY(20px);}
+        100% {-o-transform: translateY(-300px); opacity:0;}
+    }
+    .popple-bounce.pop {
+        animation-name: popple-bounce-pop-animation;
+        -webkit-animation-name: popple-bounce-pop-animation;
+        -moz-animation-name: popple-bounce-pop-animation;
+        -o-animation-name: popple-bounce-pop-animation;
+    }
+
+
+    /* POPPLE-MODAL WAKE */
+    @keyframes popple-wake-animation {
+        0%   {transform: translateY(100px); opacity:0;}
+        100% {transform: translateY(0); opacity:1;}
+    }
+    @-webkit-keyframes popple-wake-animation {
+        0%   {-webkit-transform: translateY(100px); opacity:0;}
+        100% {-webkit-transform: translateY(0); opacity:1;}
+    }
+    @-moz-keyframes popple-wake-animation {
+        0%   {-moz-transform: translateY(100px); opacity:0;}
+        100% {-moz-transform: translateY(0); opacity:1;}
+    }
+    @-o-keyframes popple-wake-animation {
+        0%   {-o-transform: translateY(100px); opacity:0;}
+        100% {-o-transform: translateY(0); opacity:1;}
+    }
+    .popple-modal.wake {
+        animation-name: popple-wake-animation;
+        -webkit-animation-name: popple-wake-animation;
+        -moz-animation-name: popple-wake-animation;
+        -o-animation-name: popple-wake-animation;
+    }
+
+    /* POPPLE-MODAL SLEEP */
+    @keyframes popple-sleep-animation {
+        0%   {transform: translateY(0); opacity:1;}
+        100% {transform: translateY(100px); opacity:0;}
+    }
+    @-webkit-keyframes popple-sleep-animation {
+        0%   {-webkit-transform: translateY(0); opacity:1;}
+        100% {-webkit-transform: translateY(100px); opacity:0;}
+    }
+    @-moz-keyframes popple-sleep-animation {
+        0%   {-moz-transform: translateY(0); opacity:1;}
+        100% {-moz-transform: translateY(100px); opacity:0;}
+    }
+    @-o-keyframes popple-sleep-animation {
+        0%   {-o-transform: translateY(0); opacity:1;}
+        100% {-o-transform: translateY(100px); opacity:0;}
+    }
+    .popple-modal.sleep {
+        animation-name: popple-sleep-animation;
+        -webkit-animation-name: popple-sleep-animation;
+        -moz-animation-name: popple-sleep-animation;
+        -o-animation-name: popple-sleep-animation;
+    }
+
+
+
+
+
+    /* POPPLE-BG IN */
+    @keyframes popple-bg-in {
+        0%   {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-webkit-keyframes popple-bg-in {
+        0%   {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-moz-keyframes popple-bg-in {
+        0%   {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-o-keyframes popple-bg-in {
+        0%   {opacity:0;}
+        100% {opacity:1;}
+    }
+    .popple-bg.in {
+        animation-name: popple-bg-in;
+        -webkit-animation-name: popple-bg-in;
+        -moz-animation-name: popple-bg-in;
+        -o-animation-name: popple-bg-in;
+    }
+
+    /* POPPLE-BG OUT */
+    @keyframes popple-bg-out {
+        0%   {opacity:1;}
+        100% {opacity:0;}
+    }
+    @-webkit-keyframes popple-bg-out {
+        0%   {opacity:1;}
+        100% {opacity:0;}
+    }
+    @-moz-keyframes popple-bg-out {
+        0%   {opacity:1;}
+        100% {opacity:0;}
+    }
+    @-o-keyframes popple-bg-out {
+        0%   {opacity:1;}
+        100% {opacity:0;}
+    }
+    .popple-bg.out {
+        animation-name: popple-bg-out;
+        -webkit-animation-name: popple-bg-out;
+        -moz-animation-name: popple-bg-out;
+        -o-animation-name: popple-bg-out;
+    }
+
+
+    .popple-bg-diagonal {
+        /* generated at: http://bit.ly/ZnvlO8 */
+        background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIUlEQVQIW2NkQAL///83ZoTxwRxGxrNgARgHxGZE5oAEAOz3DzVasxQ9AAAAAElFTkSuQmCC);
+    }
+    .popple-bg {
+        background-color:rgba(0,0,0,.92);
+        width:100%;
+        height:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:1000;
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+    }
+    .popple-modal {
+        background-color:#FFFFFF;
+        position:relative;
+        top:100px;
+        border-radius:3px;
+        padding:20px;
+        position:fixed;
+        z-index:1001;
+        display:none;
+        box-shadow:0 0 15px rgba(0,0,0,.3);
+        overflow:hidden;
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+    }
+    .popple-close-x {
+        position:absolute;
+        top:7px;
+        right:14px;
+        color:#000000;
+        font-size:19px;
+        line-height:19px;
+        cursor:pointer;
+        font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+        opacity:.18;
+        text-shadow:0 1px 0 #ffffff;
+        font-weight:bold;
+    }
+    .popple-close-x:hover {
+        opacity:.12;
+    }
+

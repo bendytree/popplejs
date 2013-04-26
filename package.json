@@ -1,0 +1,31 @@
+{
+    "name" : "popple",
+    "version" : "0.2.11",
+    "description" : "Compresses a string so that it can be embedded as a variable in JavaScript.",
+    "main" : "./popple.js",
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/bendytree/popple.git"
+    },
+    "keywords" : [
+        "modal",
+        "jquery",
+        "dialog",
+        "popup",
+		"css"
+    ],
+	"dependencies" : {
+	},
+    "devDependencies" : {
+        "stringsmash" : "*"
+    },
+    "author" : {
+        "name" : "Josh Wright",
+        "email" : "josh@bendytree.com",
+        "url" : "http://bendytree.com"
+    },
+    "scripts" : {
+		"prepublish": "node scripts/bundle.js"
+    },
+    "license" : "MIT/X11"
+}

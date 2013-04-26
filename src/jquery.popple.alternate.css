@@ -1,0 +1,58 @@
+
+    /* POPPLE-SLIDE IN */
+    @keyframes popple-slide-in-animation {
+        0%   {transform: translateY(-300px); opacity:0;}
+        100% {transform: translateY(0); opacity:1;}
+    }
+    @-webkit-keyframes popple-slide-in-animation {
+        0%   {-webkit-transform: translateY(-300px); opacity:0;}
+        100% {-webkit-transform: translateY(0); opacity:1;}
+    }
+    @-moz-keyframes popple-slide-in-animation {
+        0%   {-moz-transform: translateY(-300px); opacity:0;}
+        100% {-moz-transform: translateY(0); opacity:1;}
+    }
+    @-o-keyframes popple-slide-in-animation {
+        0%   {-o-transform: translateY(-300px); opacity:0;}
+        100% {-o-transform: translateY(0); opacity:1;}
+    }
+    .popple-modal.popple-slide.in {
+        animation-name: popple-slide-in-animation;
+        -webkit-animation-name: popple-slide-in-animation;
+        -moz-animation-name: popple-slide-in-animation;
+        -o-animation-name: popple-slide-in-animation;
+    
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+    }
+
+    /* POPPLE-SLIDE OUT */
+    @keyframes popple-slide-out-animation {
+        0%   {transform: translateY(0); opacity:1;}
+        100% {transform: translateY(-300px); opacity:0;}
+    }
+    @-webkit-keyframes popple-slide-out-animation {
+        0%   {-webkit-transform: translateY(0); opacity:1;}
+        100% {-webkit-transform: translateY(-300px); opacity:0;}
+    }
+    @-moz-keyframes popple-slide-out-animation {
+        0%   {-moz-transform: translateY(0); opacity:1;}
+        100% {-moz-transform: translateY(-300px); opacity:0;}
+    }
+    @-o-keyframes popple-slide-out-animation {
+        0%   {-o-transform: translateY(0); opacity:1;}
+        100% {-o-transform: translateY(-300px); opacity:0;}
+    }
+    .popple-modal.popple-slide.out {
+        animation-name: popple-slide-out-animation;
+        -webkit-animation-name: popple-slide-out-animation;
+        -moz-animation-name: popple-slide-out-animation;
+        -o-animation-name: popple-slide-out-animation;
+    
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+    }
