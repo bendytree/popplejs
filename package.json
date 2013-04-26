@@ -1,31 +1,33 @@
 {
-    "name" : "popple",
-    "version" : "0.2.11",
-    "description" : "Compresses a string so that it can be embedded as a variable in JavaScript.",
-    "main" : "./popple.js",
-    "repository" : {
-        "type" : "git",
-        "url" : "http://github.com/bendytree/popple.git"
-    },
-    "keywords" : [
-        "modal",
-        "jquery",
-        "dialog",
-        "popup",
-		"css"
-    ],
-	"dependencies" : {
-	},
-    "devDependencies" : {
-        "stringsmash" : "*"
-    },
-    "author" : {
-        "name" : "Josh Wright",
-        "email" : "josh@bendytree.com",
-        "url" : "http://bendytree.com"
-    },
-    "scripts" : {
-		"prepublish": "node scripts/bundle.js"
-    },
-    "license" : "MIT/X11"
+  "name": "popple",
+  "version": "0.2.12",
+  "description": "modals for jQuery - a stack based, lightweight, modular, evented, dialog system that uses CSS animations",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bendytree/popplejs.git"
+  },
+  "keywords": [
+    "modal",
+    "jquery",
+    "dialog",
+    "popup",
+    "css"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "uglify-js": "~2.2.5",
+    "stringsmash": "*",
+    "uglifycss": "0.0.5",
+    "async": "~0.2.7"
+  },
+  "author": {
+    "name": "Josh Wright",
+    "email": "josh@bendytree.com",
+    "url": "http://bendytree.com"
+  },
+  "scripts": {
+    "prepublish": "node scripts/build.js"
+  },
+  "license": "MIT/X11"
 }
