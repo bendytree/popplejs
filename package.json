@@ -1,6 +1,6 @@
 {
   "name": "popple",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "description": "modals for jQuery - a stack based, lightweight, modular, evented, dialog system that uses CSS animations",
   "repository": {
     "type": "git",
