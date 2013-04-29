@@ -30,9 +30,9 @@
 
                     for(var i=$.popple.modals.length-1; i>=0; i--){
                         var $el = $.popple.modals[i];
-                        var options = $el.popple('options');
+                        var options = $el.modal('options');
                         if(options.bgClose)
-                            $el.popple('hide');
+                            $el.modal('hide');
                     }
                 });
         
@@ -137,11 +137,11 @@
         me.options = $.extend({}, $.popple.defaults, typeof _options === 'object' && _options);
 
         $el.addClass('popple-modal')
-            .on('click', '.popple-close', function(){ me.pop(); })
-            .on('click', '.popple-close-all', $.popple.popAll);
+            .on('click', '.popple-pop', function(){ me.pop(); })
+            .on('click', '.popple-pop-all', $.popple.popAll);
         
         if (me.options.closer){
-            $el.append("<div class='popple-close popple-close-x'>x</div>");
+            $el.append("<div class='popple-pop popple-closer-x'>x</div>");
         }
           
         me.center = function () {
@@ -179,6 +179,9 @@
             }
             if(typeof me.options.animation === 'string' && me.options.animation.length > 0){
                 $el.addClass(me.options.animation);
+            }
+            if (me.options.animation === true){
+                $el.addClass($.popple.defaults.animation);
             }
 
             //animate in bg
@@ -241,8 +244,8 @@
     /* JQUERY PLUGIN
      * ============= */
 
-    var old = $.fn.popple;
-    $.fn.popple = function (options) {
+    var old = $.fn.modal;
+    $.fn.modal = function (options) {
         return $.popple.push(this, options);
     };
     
@@ -250,9 +253,9 @@
     /* NO CONFLICT MODE
      * ================ */
 
-    $.fn.popple.noConflict = function () {
-        $.fn.popple = old;
-        return $.fn.popple;
+    $.fn.modal.noConflict = function () {
+        $.fn.modal = old;
+        return $.fn.modal;
     };
 
 
@@ -262,8 +265,8 @@
     $doc.keyup(function (e) {
         if (e.keyCode === 27){ //esc
             var $el = $.popple.active();
-            if ($el && $el.popple('options').escClose){
-                $el.popple('pop');
+            if ($el && $el.modal('options').escClose){
+                $el.modal('pop');
             }
         }
     });
@@ -279,7 +282,7 @@
             selector = $.trim($this.attr('popple')),
             $el = $(selector);
           
-        $el.popple();
+        $el.modal();
         
         //good idea bootstrap
         $el.one('pop', function(){

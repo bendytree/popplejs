@@ -118,13 +118,10 @@
 		$(".btn-launch").click(function(e){
 			e.preventDefault();
 			
-            $("#modal-one").popple({
+            $("#modal-one").modal({
 			    duration: 300,
 			    push: true
 			});
-			
-			setTimeout(function(){
-			}, 1000);
 		});
 		
         var cardModal = $("#card-modal").popple({
@@ -172,7 +169,7 @@
 		
 
 		$('.card').on('click', function(){
-			cardModal.popple('push');
+			cardModal.modal('push');
 		});
 		
 	  });
